@@ -5,7 +5,6 @@
     border: 0;
 }
 
-/* Global Styles */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #999;
@@ -17,10 +16,9 @@ p {
 
 header {
     display: block;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
     padding: 10px;
     background-color: #A493C0;
 }
@@ -49,7 +47,7 @@ main {
     display: block;
     background-image: url("./../img/background.png");
     padding: 3em 0;
-    min-height: 85%;
+    min-height: 30em;
 }
 
 footer {
@@ -68,6 +66,46 @@ article {
     width: 75%;
 }
 
+/* Pies */
+.columns {
+    display: flex;
+    width: 100%;
+}
+
+.columns .title {
+    font-weight: bold;
+}
+
+.columns .price {
+    text-align: right;
+}
+
+.pie {
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.pie img {
+    width: 100%;
+}
+
+.pie .columns div {
+    width: 50%;
+}
+
+.pie button {
+    padding: 10px;
+    background-color: #F6AEAE;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* Desktop */
 @media only screen and (min-width: 768px) {
     body {
         background-image: url("./../img/background.png");
@@ -95,12 +133,17 @@ article {
         left: 0;
         width: 100%;
     }
+
+    .columns-desktop {
+        display: flex;
+    }
 }
 
+/* Mobile */
 @media only screen and (max-width: 480px) {
     nav > ul {
         display: flex;
         justify-content: space-evenly;
-        font-size: 1.2em;
+        font-size: 1.2rem;
     }
 }
