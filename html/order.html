@@ -42,6 +42,8 @@
             </div>
 
             <form action="" method="POST">
+                <input type="hidden" name="pie-order" id="pie-order">
+
                 <div class="input-group">
                     <div><label for="first-name">First name</label></div>
                     <div><input type="text" id="first-name" name="first-name"></div>
@@ -117,6 +119,10 @@
 
         if (order) {
             const pieOrder = JSON.parse(order);
+
+            // Used to send order data to a server
+            const orderInput = document.getElementById('pie-order');
+            orderInput.value = order;
 
             const pie = document.querySelector(".pie");
             pie.querySelector(".title").innerHTML = pieOrder.title;
