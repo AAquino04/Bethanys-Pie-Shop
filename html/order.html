@@ -111,4 +111,21 @@
     </footer>
 </body>
 
+<script>
+    window.addEventListener('DOMContentLoaded', e => {
+        const order = localStorage.getItem('order');
+
+        if (order) {
+            const pieOrder = JSON.parse(order);
+
+            const pie = document.querySelector(".pie");
+            pie.querySelector(".title").innerHTML = pieOrder.title;
+            pie.querySelector(".price").innerHTML = pieOrder.price;
+            pie.querySelector(".desc").innerHTML = pieOrder.desc;
+
+            pie.querySelector("img").setAttribute('src', `./../img/${pieOrder.id}.png`)
+        }
+    });
+</script>
+
 </html>
