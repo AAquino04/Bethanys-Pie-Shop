@@ -62,21 +62,14 @@ header > div > img {
 /* Footer */
 
 footer > .footer-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer-container > section > h2 {
     margin: 0;
     font-weight: 700;
     font-style: italic;
-}
-
-.footer-container > section {
-    text-align: left;
 }
 
 .footer-container > section > ul {
