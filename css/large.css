@@ -1,28 +1,9 @@
 @media only screen and (min-width: 1024px) {
-    footer > .footer-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+    .large-3 {flex-basis: 25%;}
 
     nav ul {margin-left: 2vw;}
-    nav ul {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    }
     nav ul li {width: auto;}
     nav ul li a {
         padding: .7rem 1.3rem;
     }
-
-    main > .pie-card {
-        grid-column: 1 / 7;
-    }
-    main > .pie-card:last-of-type {
-        grid-column: 7 / 13;
-    }
-
 }
