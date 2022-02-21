@@ -16,9 +16,7 @@ body {
 }
 
 header, footer{
-    width: 100%;
     background-color: #9b87b8;
-    padding: 1.1rem;
 }
 
 /* Grid rules */
@@ -43,25 +41,27 @@ header h1, header h2 {
 }
 
 header h1 { 
-	padding-top: 2rem; 
+	padding-top: 1rem; 
 	font-size: 1.95rem;
 }
 header h2{
-	padding: .2rem 0 0 0; 
+	padding-top: .2rem; 
 	font-size: 1.05rem;    
 }
 
 header > div > img {
-    height: 100px;
+    height: 85px;
     padding-right: 10px;
 }
 
 /* Footer */
 
 footer h2 {
-    margin: 0;
+    margin: 1rem 0 .3rem 0;
+    text-transform: uppercase;
     font-weight: 700;
     font-style: italic;
+    font-size: 1.2rem;
 }
 
 footer ul {
