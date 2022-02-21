@@ -104,3 +104,45 @@ nav li.active {background-color: rgba(0, 0, 0, 0.5);}
 nav a:hover {background-color: rgba(0, 0, 0, 0.2);}
 nav ul.open {display: block;}
 nav ul {display: none;}
+
+/* Main */
+.hero {
+    grid-column: 1 / 13;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+main h1 {
+    grid-column: 1 / 13;
+    color: #9b87b8;
+    font-style: italic;
+    margin: .5rem 0 .1rem 0;
+    font-size: 2rem;
+}
+
+main > .pie-card {grid-column: 1 / 13;}
+
+.labeled {position: relative;}
+
+.labeled h6, .labeled p {
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.7);
+    margin: 0;
+    width: 100%;
+    padding: .3rem 1rem;
+}
+
+.labeled h6 {
+    top: 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.labeled p {
+    bottom: 0;
+    font-weight: 700;
+    color: #b00;
+}
