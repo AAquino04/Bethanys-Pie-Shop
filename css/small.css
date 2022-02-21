@@ -31,6 +31,7 @@ header, footer{
 
 .column { padding: 0 2vw; margin: 0 0 .75rem 0;}
 .small-12 {flex-basis: 100%;}
+.small-6 {flex-basis: 50%;}
 
 /* Header */
 header h1, header h2 {
