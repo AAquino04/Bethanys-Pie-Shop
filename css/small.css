@@ -111,8 +111,11 @@ main h1, main h3 {
     font-size: 2rem;
 }
 
+.labeled h6, .labeled p {display: none;}
 .labeled {position: relative;}
-.labeled h6, .labeled p {
+
+main section:hover h6, main section:hover p {
+    display: block;
     position: absolute;
     background-color: rgb(255, 255, 255, 0.7);
     margin: 0;
