@@ -114,7 +114,7 @@ main h1, main h3 {
 .labeled h6, .labeled p {display: none;}
 .labeled {position: relative;}
 
-main section:hover h6, main section:hover p {
+main section.labeled:hover h6, main section.labeled:hover p {
     display: block;
     position: absolute;
     background-color: rgb(255, 255, 255, 0.7);
