@@ -16,7 +16,7 @@ body {
 }
 
 header, footer{
-    background-color: #9b87b8;
+    background-color: $primaryColor;
 }
 
 /* Grid rules */
@@ -83,7 +83,7 @@ button#hamburger-btn {
     padding: 0 30px;
 }
 
-nav {background-color: #23CFA7;}
+nav {background-color: $secondaryColor;}
 nav ul {margin: 0; padding: 0; width: 100%;}
 nav ul li {list-style-type: none;}
 nav a {
@@ -105,7 +105,7 @@ main img {
 }
 
 main h1, main h3 {
-    color: #9b87b8;
+    color: $primaryColor;
     font-style: italic;
     margin: .5rem 0 .1rem 0;
     font-size: 2rem;
@@ -136,9 +136,11 @@ main section.labeled:hover h6, main section.labeled:hover p {
 }
 
 /* Gallery */
-main h1 {font-size: 2rem;}
-main h3 {font-size: 1.2rem;}
-main p {
-    font-size: 1.2rem;
-    margin-bottom: .3rem;
+main {
+    h1 {font-size: 2rem;}
+    h3 {font-size: 1.2rem;}
+    p {
+        font-size: 1.2rem;
+        margin-bottom: .3rem;
+    }
 }
