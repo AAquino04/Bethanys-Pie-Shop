@@ -30,8 +30,17 @@ header, footer{
 }
 
 .column { padding: 0 2vw; margin: 0 0 .75rem 0;}
-.small-12 {flex-basis: 100%;}
-.small-6 {flex-basis: 50%;}
+
+@for $i from 1 through 12 {
+    $w:calc($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+}
+// $w variable will contain $i divided by 12 (number of columns); first line
+// $w gets multiplied by 100%, to convert $w value to percentage; second line
+// -----------------------------
+// Last line binds $i value to the class "small-",
+// making it small-1 on the first loop, then applies the flex-basis property
+// with $w value, which is 8,33333 on the first loop, for example;
 
 /* Header */
 header h1, header h2 {
